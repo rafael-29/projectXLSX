@@ -101,7 +101,7 @@ useEffect( () => {
                     ))}
             </div>
             }
-            <table>
+            <table className="vt-table">
                 <thead>
                     <tr>
                         {!headerNames ? <React.Fragment></React.Fragment> : 
@@ -113,7 +113,7 @@ useEffect( () => {
                     {!allData ? <React.Fragment></React.Fragment> :
                     allData.map( (adata,idx) => 
                     <tr key={idx}>
-                       <td>{adata.CarModel}</td>
+                       {headerNames ? headerNames.map( (hea, index) => <td>{adata[headerNames[index]]}</td>) : console.log("wala pa headers")}
                     </tr>)
                     }
                 </tbody>

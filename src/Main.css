@@ -92,7 +92,9 @@ header {
 }
 
 /* VIEW TABLE */
-
+.view-table {
+  padding: 80px;
+}
 .to-center {
   position: absolute;
   top: 50%;
